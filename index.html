@@ -665,7 +665,8 @@ async function callClaude(userMessage) {
 
   if (!response.ok) throw new Error(`API error ${response.status}`);
   const data = await response.json();
-  const replyText = data.content.map(b => b.text || '').join('');
+  if (data.error) throw new Error(data.error);
+  const replyText = data.text || 'Sorry, I could not respond right now.';
   conversationHistory.push({ role: 'assistant', content: replyText });
   return replyText;
 }
