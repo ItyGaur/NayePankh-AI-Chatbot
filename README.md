@@ -1,6 +1,6 @@
 # 🕊 Asha — AI Chatbot for NayePankh Foundation
 
-An AI-powered assistant that helps visitors donate, volunteer, and learn about NayePankh Foundation. Built with Claude AI, secured via Netlify Functions so the API key is never exposed.
+An AI-powered assistant that helps visitors donate, volunteer, and learn about NayePankh Foundation.
 
 ---
 
